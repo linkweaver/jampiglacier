@@ -1,6 +1,6 @@
 {
     'name': 'Manufacturing Products Product Label',
-    'version': '15.1.1.1',
+    'version': '15.1.1.2',
     'category': 'product',
     'price': 15,
     'currency': 'EUR',
