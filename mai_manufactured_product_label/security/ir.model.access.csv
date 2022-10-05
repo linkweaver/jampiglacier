@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_energetic_value,access_energetic_value,model_energetic_value,,1,1,1,1
-access_product_enargy,access_product_enargy,model_product_enargy,,1,1,1,1
-access_allergy_image,access_allergy_image,model_allergy_image,,1,1,1,1
