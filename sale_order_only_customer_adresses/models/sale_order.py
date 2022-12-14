@@ -14,7 +14,7 @@ class SaleOrder(models.Model):
         compute='_compute_partner_invoice_id',
         store=True, readonly=False, required=True, precompute=True,
         states=LOCKED_FIELD_STATES,
-        domain="['|', ('parent_id','=',partner_id), ('partner_id','=',partner_id)]")
+        domain="['|', ('parent_id','=',partner_id), ('id','=',partner_id)]")
         #old domin is here
         #domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
     partner_shipping_id = fields.Many2one(
@@ -23,6 +23,6 @@ class SaleOrder(models.Model):
         compute='_compute_partner_shipping_id',
         store=True, readonly=False, required=True, precompute=True,
         states=LOCKED_FIELD_STATES,
-        domain="['|', ('parent_id','=',partner_id), ('partner_id','=',partner_id)]")
+        domain="['|', ('parent_id','=',partner_id), ('id','=',partner_id)]")
         #old domin is here
         #domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",)
