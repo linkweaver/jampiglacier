@@ -1,5 +1,10 @@
 from odoo import models, fields, api
 
+LOCKED_FIELD_STATES = {
+    state: [('readonly', True)]
+    for state in {'done', 'cancel'}
+}
+
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
